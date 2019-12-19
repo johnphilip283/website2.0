@@ -4,6 +4,7 @@ import '../styles/Intro.scss';
 const Intro = () => {
   return (
     <div className="intro section">
+      Hi <br/> I'm John!
     </div>
   )
 };
