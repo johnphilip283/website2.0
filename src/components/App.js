@@ -1,17 +1,12 @@
 import React from 'react';
+import EventPage from './EventPage';
+import Navbar from './Navbar';
 import '../styles/App.scss';
-import Backdrop from "./Backdrop";
-import Timeline from "./Timeline";
-import Intro from "./Intro";
 
-const App = () => {
-  return (
-    <div className="app">
-      <Intro />
-      <Backdrop />
-      <Timeline />
-    </div>
-  );
-};
-
+const App = () => 
+  <div className="app"> 
+    <Navbar />
+    <EventPage />
+  </div>
+  
 export default App;

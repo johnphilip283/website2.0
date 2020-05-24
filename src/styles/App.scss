@@ -1,10 +1,13 @@
 .app {
   height: 100%;
-  width: 100%;
   font-family: 'Roboto', sans-serif;
+
 }
 
-.section {
-  width: 100vw;
-  height: 100vh;
+.flex {
+  display: flex;
+}
+
+.inline {
+  display: inline;
 }
