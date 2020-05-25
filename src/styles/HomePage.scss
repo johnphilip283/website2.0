@@ -1,0 +1,13 @@
+.home-page {
+  margin: 25px;
+  padding: 25px;
+
+  .welcome {
+    font-size: 60px;
+
+    #welcome-text {
+      transition: .2s;
+    }
+  }
+}
+

@@ -1,15 +1,17 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 import '../styles/Navbar.scss';
 
-const Navbar = () => 
+const Navbar = () =>
   <nav class="navbar">
-    <a href="/" class="name">John Philip</a>
+    { window.location.pathname !== "/" && <NavLink to="/" class="name">John Philip</NavLink> }
     <ul className="topics inline">
       <li className='inline'>
-        <a href="/about">About</a>
+        <NavLink to='/about'>About</NavLink>
       </li>
       <li className='inline'>
-        <a href="/projects">Projects</a>
+        <NavLink to='/projects'>Projects</NavLink>
       </li>
     </ul>
   </nav>
