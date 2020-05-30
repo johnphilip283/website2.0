@@ -11,3 +11,24 @@
   display: inline;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    animation-name: fadeIn;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  &:visited {
+    color: black;
+  }
+}
+
+@keyframes fadein {
+  to {
+    color: pink;
+  }
+}
