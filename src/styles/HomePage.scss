@@ -1,13 +1,33 @@
 .home-page {
-  margin: 25px;
-  padding: 25px;
+  margin: 125px;
 
   .welcome {
-    font-size: 60px;
+    font-size: 100px;
 
     #welcome-text {
-      transition: .2s;
+      transition: .5s;
+    }
+
+    .subline {
+      margin-top: 14px;
+      margin-left: 5px;
+    }
+    
+    .description {
+      margin-top: 20px;
+      margin-left: 5px;
+      line-height: 1.8;
+      font-size: 18px;
+
+      .bzfd-link {
+        text-decoration: none;
+        color: red;
+      }
     }
   }
 }
 
+.welcome-body {
+  font-size: 30px;
+  font-weight: 300;
+}
