@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "john-philip.com/static/css/main.e3f39d7c.chunk.css",
+    "main.js": "john-philip.com/static/js/main.e462c08d.chunk.js",
+    "main.js.map": "john-philip.com/static/js/main.e462c08d.chunk.js.map",
+    "runtime~main.js": "john-philip.com/static/js/runtime~main.bc03f1d5.js",
+    "runtime~main.js.map": "john-philip.com/static/js/runtime~main.bc03f1d5.js.map",
+    "static/js/2.03c64fab.chunk.js": "john-philip.com/static/js/2.03c64fab.chunk.js",
+    "static/js/2.03c64fab.chunk.js.map": "john-philip.com/static/js/2.03c64fab.chunk.js.map",
+    "index.html": "john-philip.com/index.html",
+    "precache-manifest.f9b16a2b41ee6b7080a6d9ff677681b2.js": "john-philip.com/precache-manifest.f9b16a2b41ee6b7080a6d9ff677681b2.js",
+    "service-worker.js": "john-philip.com/service-worker.js",
+    "static/css/main.e3f39d7c.chunk.css.map": "john-philip.com/static/css/main.e3f39d7c.chunk.css.map"
+  }
+}
