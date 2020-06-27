@@ -3,32 +3,9 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.flex {
-  display: flex;
-}
-
-.inline {
-  display: inline;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-
-  &:hover {
-    animation-name: fadeIn;
-    animation-duration: .3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
-
-  &:visited {
-    color: black;
-  }
-}
-
-@keyframes fadein {
-  to {
-    color: pink;
-  }
+.side-space {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
 }

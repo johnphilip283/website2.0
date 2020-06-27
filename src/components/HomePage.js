@@ -21,19 +21,13 @@ const HomePage = () => {
     const fadeText = () => {
       const { current } = textRef;
       if (current) {
-         current.style.opacity = 0;
-         setTimeout(() => {
-          i = (i + 1) % choices.length;
-          current.innerHTML = choices[i];
-        }, 1000);
-        setTimeout(() => {
-          current.style.opacity = 1;
-        }, 1000);
+        setTimeout(() => current.innerHTML = choices[++i % choices.length], 1000);
+        current.style.opacity = 0;
+        setTimeout(() => current.style.opacity = 1, 1000);
       }
     }
   
     const interval = setInterval(fadeText, 3000);
-
     return () => clearInterval(interval);
 
   }, [textRef, choices]);

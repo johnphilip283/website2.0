@@ -1,41 +1,8 @@
 .social-bar {
-
   margin-top: 30px;
   text-align: center;
-  
-  a {
-
-    &:visited {
-      color: black;
-    }
-
-    &:hover {
-      animation-name: fadeIn;
-      animation-duration: .3s;
-      animation-iteration-count: 1;
-      animation-fill-mode: forwards;
-    }
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
 
   li {
-      display: inline;
-      margin: 20px;
-    }
-}
-
-
-@keyframes fadeIn {
-  from {
-    color: black;
-  }
-
-  to {
-    color: pink;
+    margin: 20px;
   }
 }

@@ -11,11 +11,13 @@ const App = () =>
   <div className="app"> 
     <Router>
       <Route path='/' component={Navbar}/>
-      <Switch>
-        <Route exact path='/' component={HomePage}/>
-        <Route path='/about' component={AboutPage}/>
-        <Route path='/projects' component={ProjectsPage}/>
-      </Switch>
+        <div className="side-space">
+          <Switch>
+            <Route exact path='/' component={HomePage}/>
+            <Route path='/about' component={AboutPage}/>
+            <Route path='/projects' component={ProjectsPage}/>
+          </Switch>
+        </div> 
     </Router>
   </div>
   

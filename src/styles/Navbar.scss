@@ -1,5 +1,4 @@
-.navbar {
-  
+.navbar-custom {
   position: sticky;
   top: 0;
   padding: 50px;
@@ -9,19 +8,10 @@
   
   .topics {
     float: right;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
 
     > li {
       margin-right: 30px;
     }
-
   }
 }
 
-@keyframes fadeIn {
-  to {
-    color: pink;
-  }
-}

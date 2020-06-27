@@ -2,3 +2,36 @@ body {
   margin: 0;
   padding: 0;
 }
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    text-decoration: none;
+    animation-name: fadeIn;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  &:visited {
+    color: black;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    color: pink;
+  }
+}
