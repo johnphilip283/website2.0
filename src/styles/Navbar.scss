@@ -2,10 +2,12 @@
   position: sticky;
   top: 0;
   padding: 50px;
-  padding-left: 75px;
-  padding-right: 75px;
   background-color: white;
   
+  .name {
+    margin-left: 45px;
+  }
+
   .topics {
     float: right;
 

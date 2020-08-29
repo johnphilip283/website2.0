@@ -1,5 +1,4 @@
 import React from 'react';
-import EventPage from './EventPage';
 import Navbar from './Navbar';
 import HomePage from './HomePage';
 import AboutPage from './AboutPage';
@@ -9,15 +8,15 @@ import '../styles/App.scss';
 
 const App = () => 
   <div className="app"> 
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Route path='/' component={Navbar}/>
-        <div className="side-space">
-          <Switch>
-            <Route exact path='/' component={HomePage}/>
-            <Route path='/about' component={AboutPage}/>
-            <Route path='/projects' component={ProjectsPage}/>
-          </Switch>
-        </div> 
+      <div className="side-space">
+        <Switch>
+          <Route exact path='/' component={HomePage}/>
+          <Route path='/about' component={AboutPage}/>
+          <Route path='/projects' component={ProjectsPage}/>
+        </Switch>
+      </div> 
     </Router>
   </div>
   
