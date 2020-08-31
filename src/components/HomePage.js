@@ -8,12 +8,9 @@ const HomePage = () => {
   const choices = [
     'writing code that brings joy ♥️.', 
     'solving interesting problems with cool 😎 people.',
-    'building communities dedicated to tech + social good 👨🏽‍💻.',
-    'making tech a more equitable 🤝 space.',
-    'eating fried chicken 🍗.',
-    'drinking boba 🍵.',
-    'going on long walks in New York City 🏙.',
+    'bringing good vibes.',
     'casually studying mathematics 📈.',
+    'bringing tech + social good 👨🏽‍💻 together.',
   ];
 
   useEffect(() => {
