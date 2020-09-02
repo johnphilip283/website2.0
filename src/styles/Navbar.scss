@@ -1,19 +1,29 @@
+$margin-offset: 20px;
+
 .navbar-custom {
   position: sticky;
   top: 0;
-  padding: 50px;
   background-color: white;
-  
-  .name {
-    margin-left: 45px;
-  }
 
   .topics {
-    float: right;
+    display: flex;
 
     > li {
-      margin-right: 30px;
+      padding: 35px;
+      padding-left: 20px;
     }
+
+    > li:last-child {
+      margin-right: $margin-offset;
+    }
+
+    .name {
+      margin-left: $margin-offset;
+    }
+   
+  }
+
+  .push {
+    margin-left: auto;
   }
 }
-

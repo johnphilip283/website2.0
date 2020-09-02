@@ -5,9 +5,9 @@ import '../styles/Navbar.scss';
 
 const Navbar = () =>
   <nav class="navbar-custom">
-    { window.location.pathname !== "/" && <NavLink to="/" class="name">John Philip</NavLink> }
     <ul className="topics">
-      <li>
+      { window.location.pathname !== "/" && <li><NavLink to="/" class="name">John Philip</NavLink></li>}
+      <li class="push">
         <NavLink to='/about'>About</NavLink>
       </li>
       <li>

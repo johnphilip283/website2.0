@@ -1,10 +1,8 @@
 import React from 'react';
-import styles from "../styles/AboutPageFeed.module.scss"
-
-console.log(styles);
+import "../styles/AboutPageFeed.scss"
 
 const AboutPageFeed = () => 
-  <div className={styles["about-page-feed"]}>
+  <div className="about-page-feed">
     <ul>
       <li>
         <div className="feed-item">

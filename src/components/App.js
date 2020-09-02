@@ -10,13 +10,11 @@ const App = () =>
   <div className="app"> 
     <Router basename={process.env.PUBLIC_URL}>
       <Route path='/' component={Navbar}/>
-      <div className="side-space">
-        <Switch>
-          <Route exact path='/' component={HomePage}/>
-          <Route path='/about' component={AboutPage}/>
-          <Route path='/projects' component={ProjectsPage}/>
-        </Switch>
-      </div> 
+      <Switch>
+        <Route exact path='/' component={HomePage}/>
+        <Route path='/about' component={AboutPage}/>
+        <Route path='/projects' component={ProjectsPage}/>
+      </Switch>
     </Router>
   </div>
   
