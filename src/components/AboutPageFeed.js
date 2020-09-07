@@ -1,20 +1,12 @@
 import React from 'react';
-import "../styles/AboutPageFeed.scss"
+import FeedCardList from './FeedCardList';
+import "../styles/AboutPageFeed.scss";
+
+const cards = require('./cards.json');
 
 const AboutPageFeed = () => 
   <div className="about-page-feed">
-    <ul>
-      <li>
-        <div className="feed-item">
-          hi
-        </div>
-      </li>
-      <li>
-        <div className="feed-item">
-          there
-        </div>
-      </li>
-    </ul>
+    <FeedCardList cards={cards} />
   </div>
 
 

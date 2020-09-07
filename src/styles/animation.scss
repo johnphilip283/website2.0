@@ -1,0 +1,220 @@
+$background: #020916;
+$container: #5ab3b5;
+$shirt: #b51231;
+$skin: lighten(#c04e1e, 15%);
+
+.animation {
+  flex: 40%;
+  margin: auto;
+
+  .container {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    background: lightyellow;
+    
+    .avatar-hair {
+      position: relative;
+      width: 110px;
+      height: 110px;
+      top: 40px;
+      left: 80px;
+      border-radius: 70%;
+      border-top-right-radius: 50px;
+      border-top-left-radius: 90px;
+      background-color: black;
+      
+      &:after {
+        content: "";
+        position: relative;
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        background-color: lighten($background, 1%);
+        border-radius: 0px 60px 0px 80px;
+        z-index: 2;
+        left: 20px;
+        top: 10px;
+        transform: rotate(320deg);
+      }
+    }
+
+    .avatar-head {
+      position: relative;
+      left: 85px;
+      bottom: 35px;
+      width: 100px;
+      height: 130px;
+      border-radius: 50px;
+      z-index: 1;
+      background: $skin;
+    }
+
+    .avatar-neck {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      background: $skin;
+      left: 115px;
+      bottom: 45px;
+      border-radius: 5px;
+      box-shadow: inset 0 17px 5px 0 darken($skin, 10%);
+    }
+
+    .eyes {
+      position: relative;
+      left: 85px;
+      bottom: 160px;
+      z-index: 1;
+      height: 30px;
+      width: 100px;
+
+      &:before,
+      &:after {
+        display: inline-block;
+        content: "";
+        width: 21px;
+        height: 27px;
+        background: $background;
+        margin: 0 14px;
+        border-radius: 50%;
+        animation: blink 3s ease-in-out;
+      }
+    }
+
+    .ears {
+      position: relative;
+      width: 120px;
+      height: 40px;
+      left: 75px;
+      bottom: 200px;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        position: relative;
+        background-color: darken($skin, 4%);
+        width: 20px;
+        height: 40px;
+        border-radius: 30px;
+      }
+
+      &:after {
+        @extend .ears:before;
+        left: 80px;
+      }
+    }
+
+    .glasses {
+      position: relative;
+      width: 6px;
+      height: 2px;
+      background: black;
+      left: 132px;
+      bottom: 217px;
+    
+      .left {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border-radius: 100%;
+        border: 2px solid black;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        left: calc(50% - 47px);
+        top: calc(50% - 20px);
+        overflow: hidden;
+        z-index: 2;
+      }
+    
+      .right {
+        @extend .left;
+        left: 4px;
+      }
+    }
+    
+    .shine {
+      &:before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 100px;
+        background: white;
+        opacity: 0.3;
+        transform: rotate(30deg);
+        top: -25px;
+        left: 5px;
+      }
+    
+      &:after {
+        @extend .shine:before;
+        width: 5px;
+        left: 30px;
+      }
+    }
+
+    .bridge {
+      position: relative;
+      width: 10px;
+      height: 2px;
+      background: black;
+      left: 127px;
+      bottom: 220px;
+      z-index: 2;
+    }
+
+    .mouth {
+      position: relative;
+      height: 20px;
+      width: 37px;
+      left: 115px;
+      bottom: 190px;
+      background: rgb(252, 44, 44);
+      border-radius: 40px 40px 150px 150px;
+      z-index: 2;
+      overflow: hidden;
+      
+      &:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        right: 8px;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: rgb(252, 127, 127);
+      }
+
+      .smile {
+        position: absolute;
+        width: 38px;
+        height: 10px;
+        background-color: white;
+        border-radius: 70px 70px 150px 150px;
+        z-index: 2;
+      }
+    }
+  }
+  
+  @keyframes blink {
+    0%,
+    10%,
+    15%,
+    18%,
+    20%,
+    25%,
+    38%,
+    50%,
+    55%,
+    70%,
+    80% {
+      transform: scaleY(1);
+    }
+    20%,
+    40%,
+    60% {
+      transform: scaleY(0);
+    }
+  }
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "projectTitle": "BF Paint",
+    "content": "Me and some other engineers at BuzzFeed built a Windows 98 themed real-time Pictionary web application.",
+    "timePeriod": "August 2020",
+    "technologiesUsed": ["React", "Redux", "WebSockets", "SCSS", "Node"]
+  }
+]

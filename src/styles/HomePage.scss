@@ -1,7 +1,17 @@
+$background: #020916;
+$container: #5ab3b5;
+$shirt: #b51231;
+$skin: #c74b16;
+
 .home-page {
-  
+  margin: 100px 0 100px 100px;
+  display: flex;
+
   .welcome {
+    flex: 60%;
+    font-family: 'Montserrat', sans-serif;
     font-size: 100px;
+    align-items: center;
 
     #welcome-text {
       transition: .5s;
@@ -17,6 +27,7 @@
       margin-left: 5px;
       line-height: 1.8;
       font-size: 18px;
+      font-family: 'Lato', sans-serif;
 
       .bzfd-link {
         color: red;
@@ -28,4 +39,11 @@
 .welcome-body {
   font-size: 30px;
   font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+  .home-page {
+    flex-direction: column-reverse;
+    margin: 50px;
+  }
 }
