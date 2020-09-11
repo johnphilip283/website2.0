@@ -1,8 +1,44 @@
 [
   {
     "projectTitle": "BF Paint",
-    "content": "Me and some other engineers at BuzzFeed built a Windows 98 themed real-time Pictionary web application.",
+    "content": "At BuzzFeed, folks in the tech organization have a tradition of playing virtual Pictionary every Friday, as a way to have fun and be chaotic with coworkers. Sadly, we noticed there were a lot of shortcomings with our previous choice of pictionary application. We weren't able to play in a single game with more than 11 people, frequent U.S slang confused a lot of our non-American engineers, and it frankly didn't feel as ... BuzzFeed-y. During BuzzFeed's 2020 Hack Week, some other engineers and I built our own Pictionary web application themed like Windows 98, using React, Redux, Node and Socket.io, that featured real-time chat, fuzzy word matching, and even AI-powered word detection.",
     "timePeriod": "August 2020",
     "technologiesUsed": ["React", "Redux", "WebSockets", "SCSS", "Node"]
+  },
+  {
+    "projectTitle": "Site Navigation Admin Tool",
+    "content": "Before this service was implemented, editors and content creators on BuzzFeed had to request a code change everytime they wanted to change a trending topic on the primary site header. Ideally, the site header would stay up to date with the zeitgeist, and be updated relatively frequently with the news. However, the code-change workflow involved with changing a navigation destination was too slow, and wasted engineering effort. I built a self-service curation tool for content editors to change these topics on the site header, using AWS S3, Node, and React. I implemented local caching and polling mechanisms to reduce operational cost & API usage, created a slackbot reliant on distributed messaging architecture, and developed a REST API to handle configuration update & storage logic. This tool is still currently being used to configure trending topics on all international versions of BuzzFeed's homepage.",
+    "timePeriod": "June - August 2019",
+    "technologiesUsed": ["React", "Node", "SCSS", "Webpack", "AWS S3", "Pub/Sub Messaging"]
+  },
+  {
+    "projectTitle": "fINEQUITY",
+    "content": "Through hackNY's summer of social good initiative, I started working with fINEQUITY, a startup dedicated to providing financial literacy to the formerly incarcerated through educational campaigns. Benefactors of the program would receive lesson modules, fill them out, and send them back to be graded and advance forward. However, the workflow designed for employees to manage users, modules and mailing status involved manually updating spreadsheets, which was time-intensive, increased chance of human error, and grew more infeasible as more folks joined the program. My team and I built a fullstack web dashboard to manage users and their mail in a more streamlined and cost-efficient way. We needed the solution to be cost-efficient, so we used Serverless framework as well as the Airtable API to get around these constraints, and built and designed the frontend so it supported user-specific workflows, like batch mail sending, filtering by status, etc.",
+    "timePeriod": "June - August 2020",
+    "technologiesUsed": ["React", "Node", "Serverless", "AWS Cloudfront"]
+  },
+  {
+    "projectTitle": "Cognitive Toybox Admin Dashboard",
+    "content": "This project was my first dip into hackNY's summer of social good initiative, and I was really excited to spend time working with a company whose mission was really impactful and special. Cognitive Toybox is a small educational startup in Brooklyn dedicated to creating educational assessment games for students. Once Cognitive Toybox had released their product into schools, they found that they had little observability into how their product was being used. We decided to build a fullstack web application using React, Node, and AWS Cognito to help them visualize trends in the data they collect from schools, so they could unlock further potential with their product.",
+    "timePeriod": "June - August 2019",
+    "technologiesUsed": ["React", "D3.js", "AWS Cognito"]
+  },
+  {
+    "projectTitle": "Wayfair Financial Invoicing API",
+    "content": "",
+    "timePeriod": "January - April 2019",
+    "technologiesUsed": ["PHP", "React", "GraphQL", "SQL"]
+  },
+  {
+    "projectTitle": "Digital Podge",
+    "content": "",
+    "timePeriod": "July - August 2018",
+    "technologiesUsed": []
+  },
+  {
+    "projectTitle": "WHOOP Strap Anomaly Detection",
+    "content": "",
+    "timePeriod": "January - April 2018",
+    "technologiesUsed": ["Python", "Jupyter Notebook", "Pandas", "Numpy"]
   }
 ]

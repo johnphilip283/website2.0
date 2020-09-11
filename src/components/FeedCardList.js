@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/FeedCardList.scss';
+import '../styles/FeedCard.scss';
 
 const FeedCardList = ({ cards }) => {
   return (
@@ -18,8 +19,10 @@ const FeedCard = ({ card }) => {
       <div className="feed-card">
         <div className="offset-header"><h1>{projectTitle}</h1></div>
         <p>{timePeriod}</p>
-        <p>{content}</p>
-        <ul>{technologiesUsed.map(tech => <li>{tech}</li>)}</ul>
+        <div dangerouslySetInnerHTML={{__html: content}} />
+        <ul>
+          {technologiesUsed.map(tech => <li className="tech-items">{tech}</li>)}
+        </ul>
       </div>
     </li>
   );
