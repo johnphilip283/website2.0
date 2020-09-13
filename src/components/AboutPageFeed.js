@@ -4,5 +4,4 @@ const AboutPageFeed = () =>
   <div className="about-page-feed">
   </div>
 
-
 export default AboutPageFeed;

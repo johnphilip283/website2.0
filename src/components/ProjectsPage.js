@@ -1,12 +1,20 @@
 import React from 'react';
-import FeedCardList from './FeedCardList';
+import ProjectsPageFeed from './ProjectsPageFeed';
+import DetailPage from './DetailPage';
+import { Switch, Route } from 'react-router-dom';
+
 import "../styles/ProjectsPage.scss";
 
-const cards = require('./cards.json');
 
-const ProjectsPage = () => 
-  <div class="projects-page-feed">
-    <FeedCardList cards={cards} />
-  </div>
+const ProjectsPage = ({ match }) => {
+
+  return (
+    <Switch>
+      <Route path={`${match.path}/:route`} component={DetailPage}/>
+      <Route path={match.path} component={ProjectsPageFeed}/>
+    </Switch>
+  )
+}
+ 
 
 export default ProjectsPage;

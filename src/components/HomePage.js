@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import '../styles/HomePage.scss';
 import '../styles/animation.scss';
 import SocialBar from './SocialBar';
@@ -48,24 +48,24 @@ const HomePage = () => {
         <SocialBar/>
       </div>
       <div className="animation">
-        <div class="container">
-          <div class="avatar-hair"></div>
-          <div class="avatar-head"></div>
-          <div class="avatar-neck"></div>
-          <div class="eyes"></div>
-          <div class="ears"></div>
-          <div class="glasses">
-            <div class="left">
-              <div class="shine"></div>
+        <div className="container">
+          <div className="avatar-hair"></div>
+          <div className="avatar-head"></div>
+          <div className="avatar-neck"></div>
+          <div className="eyes"></div>
+          <div className="ears"></div>
+          <div className="glasses">
+            <div className="left">
+              <div className="shine"></div>
             </div>
-            <div class="right">
-              <div class="shine"></div>
+            <div className="right">
+              <div className="shine"></div>
             </div>
           </div>
-          <div class="bridge"></div>
-          <div class="shine"></div>
-          <div class="mouth">
-            <div class="smile">
+          <div className="bridge"></div>
+          <div className="shine"></div>
+          <div className="mouth">
+            <div className="smile">
             </div>
           </div>
         </div>
