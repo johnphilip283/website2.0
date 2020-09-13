@@ -13,10 +13,10 @@ const Navbar = () =>
             </NavLink>
         </li>
       }
-      <li class="push">
+      {/* <li>
         <NavLink to='/about'>About</NavLink>
-      </li>
-      <li>
+      </li> */}
+      <li class="push">
         <NavLink to='/projects'>Projects</NavLink>
       </li>
     </ul>

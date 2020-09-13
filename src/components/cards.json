@@ -1,44 +1,56 @@
-[
-  {
-    "projectTitle": "BF Paint",
-    "content": "At BuzzFeed, folks in the tech organization have a tradition of playing virtual Pictionary every Friday, as a way to have fun and be chaotic with coworkers. Sadly, we noticed there were a lot of shortcomings with our previous choice of pictionary application. We weren't able to play in a single game with more than 11 people, frequent U.S slang confused a lot of our non-American engineers, and it frankly didn't feel as ... BuzzFeed-y. During BuzzFeed's 2020 Hack Week, some other engineers and I built our own Pictionary web application themed like Windows 98, using React, Redux, Node and Socket.io, that featured real-time chat, fuzzy word matching, and even AI-powered word detection.",
-    "timePeriod": "August 2020",
-    "technologiesUsed": ["React", "Redux", "WebSockets", "SCSS", "Node"]
-  },
-  {
-    "projectTitle": "Site Navigation Admin Tool",
-    "content": "Before this service was implemented, editors and content creators on BuzzFeed had to request a code change everytime they wanted to change a trending topic on the primary site header. Ideally, the site header would stay up to date with the zeitgeist, and be updated relatively frequently with the news. However, the code-change workflow involved with changing a navigation destination was too slow, and wasted engineering effort. I built a self-service curation tool for content editors to change these topics on the site header, using AWS S3, Node, and React. I implemented local caching and polling mechanisms to reduce operational cost & API usage, created a slackbot reliant on distributed messaging architecture, and developed a REST API to handle configuration update & storage logic. This tool is still currently being used to configure trending topics on all international versions of BuzzFeed's homepage.",
-    "timePeriod": "June - August 2019",
-    "technologiesUsed": ["React", "Node", "SCSS", "Webpack", "AWS S3", "Pub/Sub Messaging"]
-  },
-  {
-    "projectTitle": "fINEQUITY",
-    "content": "Through hackNY's summer of social good initiative, I started working with fINEQUITY, a startup dedicated to providing financial literacy to the formerly incarcerated through educational campaigns. Benefactors of the program would receive lesson modules, fill them out, and send them back to be graded and advance forward. However, the workflow designed for employees to manage users, modules and mailing status involved manually updating spreadsheets, which was time-intensive, increased chance of human error, and grew more infeasible as more folks joined the program. My team and I built a fullstack web dashboard to manage users and their mail in a more streamlined and cost-efficient way. We needed the solution to be cost-efficient, so we used Serverless framework as well as the Airtable API to get around these constraints, and built and designed the frontend so it supported user-specific workflows, like batch mail sending, filtering by status, etc.",
-    "timePeriod": "June - August 2020",
-    "technologiesUsed": ["React", "Node", "Serverless", "AWS Cloudfront"]
-  },
-  {
-    "projectTitle": "Cognitive Toybox Admin Dashboard",
-    "content": "This project was my first dip into hackNY's summer of social good initiative, and I was really excited to spend time working with a company whose mission was really impactful and special. Cognitive Toybox is a small educational startup in Brooklyn dedicated to creating educational assessment games for students. Once Cognitive Toybox had released their product into schools, they found that they had little observability into how their product was being used. We decided to build a fullstack web application using React, Node, and AWS Cognito to help them visualize trends in the data they collect from schools, so they could unlock further potential with their product.",
-    "timePeriod": "June - August 2019",
-    "technologiesUsed": ["React", "D3.js", "AWS Cognito"]
-  },
-  {
-    "projectTitle": "Wayfair Financial Invoicing API",
-    "content": "",
-    "timePeriod": "January - April 2019",
-    "technologiesUsed": ["PHP", "React", "GraphQL", "SQL"]
-  },
-  {
-    "projectTitle": "Digital Podge",
-    "content": "",
-    "timePeriod": "July - August 2018",
-    "technologiesUsed": []
-  },
-  {
-    "projectTitle": "WHOOP Strap Anomaly Detection",
-    "content": "",
-    "timePeriod": "January - April 2018",
-    "technologiesUsed": ["Python", "Jupyter Notebook", "Pandas", "Numpy"]
-  }
+[{
+  "projectTitle": "Accessibility @ BuzzFeed",
+  "company": "BuzzFeed - Software Engineer (Contractor)",
+  "background": "When audited by a verified third party, BuzzFeed was found to have had more than 400 accessibility issues with core parts of the website, ranging from semantic markup issues to more deep-rooted product issues like appropriate alt text for our content. This experience alienated a lot of our audience, opened BuzzFeed up to legal consequences, and just didn’t align with our mission to spread truth and joy to the entire internet. The tech organization became strongly invested in having an accessible experience accredited by experts, and we needed to amend these issues as quickly as possible. More importantly, we needed to learn how to create a culture of accessibility so that this experience was not recreated years down the road.",
+  "solution": "We first got to work addressing a lot of the semantic issues present on our site. I worked on fixing a lot of semantic markup issues on core rendering services, usually working with lots of different JS frameworks to refactor parts of the site to reflect best a11y practices. I also helped incorporate the addition of alt text into BuzzFeed quizzes and within various workflows for internal tools, helping encourage its adoption across the content organization. Myself and other engineers within the tech organization now collaborate with content editors to help them write better alt text, and are establishing more standard a11y patterns into the code that powers BuzzFeed.",
+  "timePeriod": "June 2019 - August 2020",
+  "technologiesUsed": ["T3.js", "Backbone.js", "HTML", "SCSS", "React", "jQuery"],
+  "relatedLink": "https://tech.buzzfeed.com/accessible-buzzfeed-2e1f3f94f352"
+},
+{
+  "projectTitle": "BF Paint",
+  "background": "At BuzzFeed, folks in the tech organization have a tradition of playing virtual Pictionary every Friday, as a way to have fun and be chaotic with coworkers. Sadly, we noticed there were a lot of shortcomings with our previous choice of pictionary application. We weren't able to play in a single game with more than 11 people, U.S slang frequently confused a lot of our non-American engineers, and it frankly didn't feel as \"BuzzFeed-y\".",
+  "solution": "During our <a href=\"https://tech.buzzfeed.com/best-of-hack-week-2020-42df16471d0d\">2020 Hack Week</a>, some other engineers and I built our own Pictionary web application themed à la Windows 98, using React, Redux, Node and Socket.io, that featured real-time chat, fuzzy word matching, and even AI-powered word detection. I wrote the real-time room joining functionality, and helped with the state management between the server, rooms and the users within the rooms. It was a really interesting lesson in seeing how state had to be maintained as data flowed in a big event-based system, and the end product was really cool!",
+  "timePeriod": "August 2020",
+  "technologiesUsed": ["React", "Redux", "WebSocket", "SCSS", "Node"],
+  "relatedLink": "https://tech.buzzfeed.com/best-of-hack-week-2020-42df16471d0d"
+},
+{
+  "projectTitle": "Site Navigation Admin Tool",
+  "company": "BuzzFeed - Fullstack Engineering Intern",
+  "background": "Before this service was implemented, editors and content creators on BuzzFeed had to request a code change everytime they wanted to change a trending topic on the primary site header. Ideally, the site header would stay up to date with the zeitgeist, and be updated relatively frequently with the news. However, the code-change workflow involved with changing a navigation destination was too slow, and wasted engineering effort.",
+  "solution": "I built a self-service curation tool for content editors to change these topics on the site header, using AWS S3, Node, and React. I implemented local caching and polling mechanisms to reduce operational cost & API usage, created a slackbot reliant on distributed messaging architecture, and developed a REST API to handle configuration update & storage logic. This tool is still currently being used to configure trending topics on all international versions of BuzzFeed's homepage.",
+  "timePeriod": "June - August 2019",
+  "technologiesUsed": ["React", "Node", "SCSS", "Webpack", "AWS S3", "Pub/Sub Messaging"]
+},
+{
+  "projectTitle": "fINEQUITY",
+  "background": "Through hackNY's summer of social good initiative, I started working with <a href=\"https://goinghomenow.org/\">fINEQUITY</a>, an early-stage organization dedicated to providing financial literacy to those impacted by long-term incarceration. Program participants would receive lesson modules, fill them out, and send them back to be graded and advance forward. However, the workflow designed for employees to manage participants, modules and mailing state involved manually updating spreadsheets, which was time-intensive, human error-prone, and infeasible with scale.",
+  "solution": "My team and I built a fullstack web dashboard to manage users and their mail in a more streamlined and cost-efficient way. We needed the solution to practically run for free, so we used Serverless framework as well as the Airtable API to get around having no server and database. We then built an Express server to expose functional endpoints to our frontend. We built and designed the frontend so it supported user-specific workflows, like batch mail sending, filtering by status, etc.",
+  "timePeriod": "June - August 2020",
+  "technologiesUsed": ["React", "Node", "Serverless", "AWS Cloudfront"]
+},
+{
+  "projectTitle": "Cognitive Toybox Admin Dashboard",
+  "background": "This project was my first dip into client work for a social good startup, and I was really excited to spend time working with a company whose mission was really impactful and special. Cognitive Toybox is a small educational startup in Brooklyn dedicated to creating educational assessment games for students. Once Cognitive Toybox had released their product into schools, they found that they had little observability into how their product was being used.",
+  "solution": "My team and I decided to build a fullstack web application using React, Node, and AWS Cognito to help them visualize trends in the data they collect from schools, so they could unlock further potential with their product. Lots of the work involved creating the frontend to present the data in a user-friendly and fun way, so we used a high-level abstraction over D3.js called <a href=\"https://recharts.org/en-US/\">Recharts</a> so that we could iterate quickly and deliver something really polished.",
+  "timePeriod": "June - August 2019",
+  "technologiesUsed": ["React", "D3.js", "AWS Cognito"]
+},
+{
+  "projectTitle": "Wayfair Financial Invoicing API",
+  "company": "Wayfair - Revenue Management Systems Co-op",
+  "background": "As Wayfair grew in scale, onboarding hundreds of suppliers and generating thousands more invoices a day, their processing pipeline started to show its limits. The previous cron-based system of transaction processing led to lags in data, sources of truth for certain data had become forgotten, and other certain deeply-rooted issues just made maintenance a hassle for everyday engineers. It represented some burning technical debt, and there was an estimated ~$10 million in potential revenue if we could tackle the problem right.",
+  "solution": "Our team wrote a new financial invoicing API that relied on distributed messaging using Kafka as well as API endpoints written using PHP and GraphQL, redesigning how the data was represented and making the pipeline work asynchronously. I was able to write some GraphQL resolvers to query and integrate a lot of disparate data sources, so we could present one flexible, version-independent endpoint to clients. This was a pretty formative project, I’d never worked with a framework like GraphQL before, and it was a really fulfilling experience migrating a legacy system over to something so elegant and modern.",
+  "timePeriod": "January - April 2019",
+  "technologiesUsed": ["PHP", "React", "GraphQL", "SQL"]
+},
+{
+  "projectTitle": "hackNY",
+  "company": "hackNY - Director of Admissions",
+  "background": "hackNY is a non-profit dedicated to empowering the next generation of student technologists in New York City. Every year, about 20 fellows are chosen to be part of a class that lives in New York City, interns with local startups, and works on technical social good projects on the side. I was part of the hackNY class of 2019, and hackNY needed someone to serve as Director of Admissions for the class of 2020.",
+  "solution": "I facilitated and created a review process for over 2300 applications, conducted lots of technical and behavioral interviews, and ended up admitting a class of 24 wonderful fellows. This was a really interesting job of mine, simply because it wasn't technical, and the daunting task of choosing a cool, unique class from such an intimidatingly large pool wasn't one that anyone could tell me how to do. I had to develop fair admissions policies, learn how to holistically assess people while minimizing bias, and overall, just learn how to organize complex situations with little/no background. I regularly had to fix urgent, client-facing incidents on the fly, and successfully worked with my team of over 50 volunteers to achieve our desired goal, which directly taught me more about ownership and leadership than any other job of mine.",
+  "timePeriod": "August 2019 - July 2020",
+  "relatedLink": "https://medium.com/hackny/announcing-the-class-of-2020-hackny-fellows-f594c173aff6"
+}
 ]

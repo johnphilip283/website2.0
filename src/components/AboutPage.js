@@ -9,4 +9,4 @@ const AboutPage = ({ match }) =>
   </Switch>
 
 
-export default AboutPage;
+export default AboutPage; 
