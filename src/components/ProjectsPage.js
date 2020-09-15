@@ -5,7 +5,6 @@ import { Switch, Route } from 'react-router-dom';
 
 import "../styles/ProjectsPage.scss";
 
-
 const ProjectsPage = ({ match }) => {
 
   return (
@@ -15,6 +14,5 @@ const ProjectsPage = ({ match }) => {
     </Switch>
   )
 }
- 
 
 export default ProjectsPage;
