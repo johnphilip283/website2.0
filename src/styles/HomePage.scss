@@ -6,12 +6,17 @@ $skin: #c74b16;
 .home-page {
   margin: 100px 0 100px 100px;
   display: flex;
+  flex: 1 1 auto;
 
   .welcome {
     flex: 60%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 100px;
     align-items: center;
+    margin: auto;
+
+    > h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 100px;
+    }
 
     #welcome-text {
       transition: .5s;

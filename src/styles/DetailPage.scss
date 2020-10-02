@@ -1,13 +1,56 @@
 .detail-container {
   display: flex;
 
+  h5 {
+    display: inline;
+  }
+
+  .inline-section {
+    margin: 10px;
+    margin-left: 0;
+  }
+
   .image {
-    flex: 50%;
+    margin: 5%;
+    align-items: center;
+    justify-items: center;
+
+    img, video {
+      display: block;
+      margin: 30px;
+    }
+  }
+
+  .section-accent {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 70%, #ffde75 40%);
+    margin-left: 0;
   }
 
   .content {
-    flex: 50%;
-    margin: 25px;
-    line-height: 20px;
+
+    > h1 {
+      margin-bottom: 20px;
+    }
+
+    margin: 5%;
+    line-height: 1.7rem;
   }
+
+  .tech-items {
+    display: inline-block;
+    
+    .tech-item {
+      margin-right: 10px;
+    }
+  }
+  
+
+  .related-link {
+    margin: 10px;
+  }
+}
+
+.margin-1 {
+  margin: 25px;
+  margin-left: 0;
 }

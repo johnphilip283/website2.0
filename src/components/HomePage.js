@@ -34,7 +34,7 @@ const HomePage = () => {
   return (
     <div className='home-page'>
       <div className='welcome'>
-        Hi! I'm John.<br/>
+        <h1>Hi! I'm John.</h1><br/>
         <div className='welcome-body subline'>
           I like <span ref={textRef} id="welcome-text">{choices[0]}</span>
         </div>
@@ -42,8 +42,8 @@ const HomePage = () => {
           I'm a Master's student studying Computer Science at Northeastern University,
           concentrating in Artificial Intelligence and Human-Computer Interaction. 
           When I'm not doing homework, I work as a software engineer at <a href='www.buzzfeed.com' className='bzfd-link'>BuzzFeed</a>, 
-          working on the Frontend Infrastructure team. When I'm not studying or working, 
-          I'm probably trying to learn something new, dreaming of eating halal food, or spending too much time on TikTok.
+          doing frontend infrastructure for the Content Management Systems team. When I'm not studying or working, 
+          I'm probably trying to learn something new, eating halal food, or spending too much time on TikTok.
         </p>
         <SocialBar/>
       </div>

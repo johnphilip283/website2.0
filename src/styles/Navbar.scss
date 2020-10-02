@@ -3,9 +3,10 @@ $margin-offset: 50px;
 .navbar-custom {
   position: sticky;
   top: 0;
+  z-index: 1;
   background-color: white;
-  z-index: 3;
-  
+  flex: 0 1 auto;
+
   .topics {
     display: flex;
 
@@ -13,7 +14,7 @@ $margin-offset: 50px;
       padding: 25px;
       padding-left: 0;
       padding-right: 30px;
-      line-height: 200%;;
+      line-height: 200%;
 
       > a {
         position: relative;
@@ -23,8 +24,8 @@ $margin-offset: 50px;
         text-decoration: none;
 
         &:not(.name)::after {
-          border-top: .1em solid #2F56B0;
           content: "";
+          border-top: .1em solid #2F56B0;
           position: absolute;
           right: 100%;
           left: 0;

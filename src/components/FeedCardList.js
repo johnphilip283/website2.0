@@ -13,23 +13,14 @@ const FeedCardList = ({ cards }) => {
  
 const FeedCard = ({ card }) => {
 
-  const { projectTitle, timePeriod, technologiesUsed, company, background, solution, relatedLink, route } = card;
+  const { projectTitle, description, route } = card;
 
   return (
     <li>
       <Link to={window.location.pathname + '/' + route}>
         <div className="feed-card">
           <div className="offset-header"><h1>{projectTitle}</h1></div>
-          { company && <p>Company: {company}</p>}
-          <h3>Background: </h3>
-          <p dangerouslySetInnerHTML={{__html: background}} />
-          <h3>Solution: </h3>
-          <p dangerouslySetInnerHTML={{__html: solution}} />
-          <p>{timePeriod}</p>
-          {relatedLink && <p>Related Link : {relatedLink}</p>}
-          <ul>
-            {technologiesUsed && technologiesUsed.map((tech, idx) => <li className="tech-items" key={idx}>{tech}</li>)}
-          </ul>
+          <h3>{description}</h3>
         </div>
       </Link>
     </li>
