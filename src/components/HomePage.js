@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import '../styles/HomePage.scss';
-import '../styles/avatar.scss';
 import SocialBar from './SocialBar';
+import Avatar from './Avatar';
 
 const HomePage = () => {
 
@@ -47,29 +47,7 @@ const HomePage = () => {
         </p>
         <SocialBar/>
       </div>
-      <div className="avatar">
-        <div className="container">
-          <div className="avatar-hair"></div>
-          <div className="avatar-head"></div>
-          <div className="avatar-neck"></div>
-          <div className="eyes"></div>
-          <div className="ears"></div>
-          <div className="glasses">
-            <div className="left">
-              <div className="shine"></div>
-            </div>
-            <div className="right">
-              <div className="shine"></div>
-            </div>
-          </div>
-          <div className="bridge"></div>
-          <div className="shine"></div>
-          <div className="mouth">
-            <div className="smile">
-            </div>
-          </div>
-        </div>
-      </div>
+      <Avatar/>
     </main>
   )
 }
