@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import '../styles/HomePage.scss';
-import '../styles/animation.scss';
+import '../styles/avatar.scss';
 import SocialBar from './SocialBar';
 
 const HomePage = () => {
@@ -9,10 +9,10 @@ const HomePage = () => {
 
   const choices = [
     'writing code that brings joy ♥️.', 
-    'working on fun problems with cool 😎 people.',
+    'working on fun problems with cool people 😎.',
     'bringing good vibes.',
     'constantly learning more about the world 📈.',
-    'bringing tech + social good 👨🏽‍💻 together.',
+    'building bridges between tech and social good 👨🏽‍💻.'
   ];
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const HomePage = () => {
   }, [textRef, choices]);
 
   return (
-    <div className='home-page'>
+    <main className='home-page'>
       <div className='welcome'>
         <h1>Hi! I'm John.</h1><br/>
         <div className='welcome-body subline'>
@@ -47,7 +47,7 @@ const HomePage = () => {
         </p>
         <SocialBar/>
       </div>
-      <div className="animation">
+      <div className="avatar">
         <div className="container">
           <div className="avatar-hair"></div>
           <div className="avatar-head"></div>
@@ -70,7 +70,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   )
 }
   

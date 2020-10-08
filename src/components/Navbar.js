@@ -10,7 +10,7 @@ const Navbar = () =>
         <li>
           <NavLink to="/" className="name">
             <img width={32} height={32} src={`/images/logo.png`} alt="Go back to home page"/>
-            </NavLink>
+          </NavLink>
         </li>
       }
       <li className="push">

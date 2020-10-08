@@ -10,11 +10,11 @@
     margin-left: 0;
   }
 
-  .image {
+  .media {
     margin: 5%;
     align-items: center;
-    justify-items: center;
-
+    flex-direction: column;
+    
     img, video {
       display: block;
       margin: 30px;
@@ -22,8 +22,8 @@
   }
 
   .section-accent {
-    background: linear-gradient(180deg, rgba(255,255,255,0) 70%, #ffde75 40%);
-    margin-left: 0;
+    border-bottom: 2px solid #fd4592a1;
+    padding-bottom: 1px;
   }
 
   .content {
@@ -48,6 +48,17 @@
   .related-link {
     margin: 10px;
   }
+}
+
+@media (max-width: 1024px) {
+  .detail-container {
+    flex-direction: column-reverse;
+  }
+
+  .media {
+    margin: auto;
+  }
+
 }
 
 .margin-1 {

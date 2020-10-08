@@ -13,15 +13,19 @@ const FeedCardList = ({ cards }) => {
  
 const FeedCard = ({ card }) => {
 
-  const { projectTitle, description, route } = card;
+  const { projectTitle, description, route, role, timePeriod } = card;
 
   return (
     <li>
       <Link to={window.location.pathname + '/' + route}>
-        <div className="feed-card">
-          <div className="offset-header"><h1>{projectTitle}</h1></div>
-          <h3>{description}</h3>
-        </div>
+        <article className="feed-card">
+          <div className="offset-header">
+            <h1>{projectTitle}</h1>
+          </div>
+          <h4>{description}</h4><br/>
+          <p>Role: {role}</p>
+          <p>When: {timePeriod}</p>
+        </article>
       </Link>
     </li>
   );
