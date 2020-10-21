@@ -41,7 +41,7 @@ const HomePage = () => {
         <p className='welcome-body description'>
           I'm a Master's student studying Computer Science at Northeastern University,
           concentrating in Artificial Intelligence and Human-Computer Interaction. 
-          When I'm not doing homework, I work as a software engineer at <a href='www.buzzfeed.com' className='bzfd-link'>BuzzFeed</a>, 
+          When I'm not doing homework, I work as a software engineer at <a href='https://www.buzzfeed.com' className='bzfd-link'>BuzzFeed</a>, 
           doing frontend infrastructure for the Content Management Systems team. When I'm not studying or working, 
           I'm probably trying to learn something new, eating halal food, or spending too much time on TikTok.
         </p>
